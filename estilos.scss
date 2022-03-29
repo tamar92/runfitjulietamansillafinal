@@ -1,0 +1,620 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;0,900&display=swap');
+
+$color1: #00ff33;
+$color2: #000;
+$color3: #fff;
+$color4: #c4c4c4;
+$color5: #E5E5E5;
+
+$font1: 'Roboto Condensed', sans-serif, italic;
+$font2:'Roboto', sans-serif;
+$font3: 'Poppins', sans-serif;
+
+$xs: 10px;
+$small: 15px;
+$med: 20px;
+$large: 40px;
+$xl: 50px;
+
+$img1: imagenprincipal;
+$img2: imagensecundaria;
+$img3: imagenterciaria;
+$principal: imagenprincipal ;
+
+.header-home{   
+    @if $principal==imagenprincipal{
+        background-image: url("../img/imagenprincipal.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: $xl;
+    }
+
+    @else if $principal==$img2 {
+        background-image:url("../img/imagensecundaria.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: $xl;
+    }
+
+    @else if $principal==$img3 {
+        background-image: url("../img/imagenterciaria.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: $xl;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;0,900&display=swap');
+
+h1{
+    font-family: $font1;
+    font-weight:700;
+    font-size: $large;
+    color:$color3;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: $font1;
+    font-weight:900;
+    font-style: italic;
+    font-size: $large;
+    color:$color1;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 5%;   
+}
+
+h3{
+    color: $color2;
+    margin-top: 1.5rem;
+    font-family: $font2;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+h4{
+    color: $color2;
+    font-family: $font2;
+    font-weight: 900;
+    font-size: $med;
+}
+
+.jc-right{
+    justify-content: right;
+}
+
+.navbar{
+    background-color: $color2;
+    padding-top:1rem ;
+    padding-bottom: 1rem;
+    border-bottom: none;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font1;
+    font-weight: 700;
+    font-size: $small;
+    margin: 0 1rem ;
+    padding:rem 0.1rem;
+}
+.nav-item .nav-link{
+    color:rgba(255,255,255,1);
+}
+.active {
+    color: $color1 !important; 
+}
+.navbar a:hover{color:$color1;}
+
+ul{
+    list-style-type: none;
+    font-size: $med;;
+    display:flex;  
+}
+
+ul ul {
+    position: relative;
+    display: none;
+    li {
+    display: block;
+    width:200px;
+    padding: $xs;
+    a {color: white;}
+    }
+    
+
+    ul li:hover ul {
+    position: absolute;
+    display:block;
+    background-color: $color2;
+    }
+}
+
+/* HEADER */
+
+
+.inicio{
+    display:block;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    h1{ 
+        font-family: $font1;
+        font-size: $xl;
+        font-weight:900;
+        font-style: italic;
+        color: white;
+        margin-bottom: $small;
+    }
+    p{
+        display: block;
+        font-family: $font3;
+        font-size: $small;
+        font-weight: 400;
+        color: white;
+        text-align: left;
+        margin-bottom: $med;
+    }
+}
+
+
+.aparicion { 
+	animation: 1s aparicion 1; 
+	transform-origin: top left;
+}
+
+@keyframes aparicion
+{
+	0% { opacity: 0; }
+	50% { opacity: 0.8; }
+}
+
+.boton{
+    display: inline-block;
+    width: auto;
+    padding: 3% 6%;
+    border-radius: 0.5rem;
+    background:$color1;
+    font-family: $font1;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    color: $color2;
+} 
+
+.centrar-vertical{
+    align-items: center;
+    display: flex;
+    justify-content: start;     
+}
+
+.grey{
+    background-color:$color5;
+}
+.sec-verde{
+    background-color: $color1;
+    border-radius: 1rem; 
+    padding: 2%;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    p{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        color: black;
+        margin-top: 2rem;
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 1,5rem;
+    }
+}
+
+.pot-cres{
+    padding: 2%;
+    img{
+        align-items: center;  
+    }
+    h3{
+        text-align: center;
+        color: black;
+        text-align: left;
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+.boton{
+    background-color:transparent;
+    border: 3px solid #00FF33;
+
+    } ;
+}
+
+.rounded-1r{
+    border-radius: 1rem;
+}
+
+.calcula-imc{
+    background-image: url('../img/fondoimc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4%;
+    .boton{
+        margin-top: 3%;
+    }
+    h3{
+        font-size: $large;
+    }
+}
+
+.imc{
+    border-radius: 1rem;
+    overflow: hidden;
+    align-items: center;   
+}
+
+.imc-1{
+    background-color: #00ff33b6;   
+
+    h4{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+.imc-2{
+    background-color: #00ff33b6;
+    
+    h4{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+.pasosflex i{
+    color: $color1;
+
+}
+
+.carrusel-1{
+    margin-bottom: 3%;
+    
+    h5{
+        color:$color1;
+        text-transform:uppercase;
+        font-family: $font2;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.5rem;  
+    }
+}
+
+
+/* FIN HEADER */
+
+
+/* _______________PLANES_______________ */
+
+.columnas {
+    align-content: center;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.run {
+    background:$color1;
+    color: rgb(0, 0, 0);
+    padding: 32px;
+    margin-top: 5%;
+    
+    text-align: center;     
+    border-radius: 1rem;
+    p{
+        font-size: 0.7rem;
+    }
+    h4{
+        margin-bottom: 2rem;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 1.5rem;
+        
+    }
+    h3{
+        color: black;
+        margin-top: 2rem;
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    input{
+        padding: 4% 7%;
+        border-radius: 1rem;
+        background:$color2;
+        color: $color1;
+        font-family: $font1;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+    
+    }
+    .btn{
+        background-color: $color2;
+        border-color: $color2;
+    }
+}
+
+.overlay-black{
+    position: relative;
+    &::before{
+        content: '';   
+    }
+} 
+
+.black {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 32px;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 1rem;
+    p{
+        font-size: 0.7rem;
+        color: $color1;
+    }
+    h4{
+        margin-bottom: 2rem;
+        color: $color1;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    h3{
+        margin-top: 2rem;
+        color: $color1;
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 2rem;
+    
+    }
+    input{
+        padding: 4% 7%;
+        border-radius: 1rem;
+        background:$color1;    
+        font-family: $font1;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+    
+    }
+    .btn{
+        background-color: $color1;
+        border-color: $color1;
+    }
+}
+
+.todo-nec{
+    h2{color: $color2;}
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color:$color1 ;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    text-align: left;
+}
+.centro{
+    text-align: center;
+}
+.titulo-footer{
+    font-family: $font1;
+    font-weight: 700;
+    font-size: $med;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.institucional{ 
+    p{  
+    font-size: $small;    
+    font-weight: 300;}
+    a{  
+        font-size: $small;    
+        font-weight: 300;
+        text-decoration: none;
+        color: $color2;
+        display: inline-block;
+    }
+}
+
+
+.sociallinks .socialicons{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    li{
+        list-style: none;
+        display: inline;
+        margin: 0 5px;
+    }
+    img{
+        max-width: 35px;
+    }
+}   
+
+
+/* ________________ENTRENAMIENTO____________________ */
+
+.metodos{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    div
+    {
+    height: auto;
+    width: 35%;
+    }
+    h3{
+        font-family:$font1;
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+    p{
+        margin: 0 1rem 1rem 0;
+    }
+}
+
+.elementos{
+    height: 1000px;
+    background-size: cover;
+}
+
+.tipos-entre{
+    padding: 2%;
+    h3{
+        font-family:$font1;
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+}
+.entre-1{
+    background-color: $color3;
+    border-radius: 1rem; 
+    padding: 2%;
+    margin-bottom: 5%;
+    .btn{
+    background-color: $color1;
+    border-color: $color1;
+    color: $color2;
+    font-family: $font1;
+    font-size: $med;
+    font-style: italic;
+    }
+}
+.entre-2{
+    border-radius: rem; 
+    margin-bottom: 2%;
+    
+    .btn{
+    background-color: $color1;
+    border-color: $color1;
+    color: $color2;
+    font-family: $font1;
+    font-size: $med;
+    font-style: italic;
+    margin-top: -3px;
+    }
+}
+
+.merch{
+    background-color: $color3;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem 1rem;  
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:15px 0 15px 0;
+}
+
+
+
+/* ________________FIN ENTRENAMIENTO____________________ */
+
+
+/* _____________________RUNFIT____________________ */
+
+.runfit-post{
+    background-image: url('../img/runfitfondo.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    align-items: flex-end;
+}
+.entre-post{
+    background-image: url('../img/entrenamiento_fondo.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    align-items: flex-end;
+}
+
+.planes-post{
+    background-image: url('../img/planes_fondo.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    align-items: flex-end;
+}
+.contacto-post{
+    background-image: url('../img/contacto_fondo.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    align-items: flex-end;
+}
+
+.texto{
+    h2{
+        color: $color3;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        margin-top: 15%;
+    }
+}
+.columna1, .columna2{
+    margin-top: 3%;
+}
+
+.runfit{
+    display:inline;
+    width: 100%;
+    h3{
+        font-family:$font1;
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+    p{
+        margin: 0 1rem 1rem 0;
+    }
+    
+}
+/* ________________FIN RUTFIN__________________ */
+
+
+.form-check-input:checked {
+    background-color: $color1 ;
+    border-color: $color1 !important;
+}
