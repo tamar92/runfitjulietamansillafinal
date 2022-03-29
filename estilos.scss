@@ -24,7 +24,7 @@ $principal: imagenprincipal ;
 
 .header-home{   
     @if $principal==imagenprincipal{
-        background-image: url("../img/imagenprincipal.jpg");
+        background-image: url("img/imagenprincipal.jpg");
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
@@ -33,7 +33,7 @@ $principal: imagenprincipal ;
     }
 
     @else if $principal==$img2 {
-        background-image:url("../img/imagensecundaria.jpg");
+        background-image:url("img/imagensecundaria.jpg");
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
@@ -42,7 +42,7 @@ $principal: imagenprincipal ;
     }
 
     @else if $principal==$img3 {
-        background-image: url("../img/imagenterciaria.jpg");
+        background-image: url("img/imagenterciaria.jpg");
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
@@ -236,7 +236,7 @@ ul ul {
     background-color:transparent;
     border: 3px solid #00FF33;
 
-    } ;
+    }
 }
 
 .rounded-1r{
@@ -244,7 +244,7 @@ ul ul {
 }
 
 .calcula-imc{
-    background-image: url('../img/fondoimc.jpg');
+    background-image: url('img/fondoimc.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -552,7 +552,7 @@ footer{
 /* _____________________RUNFIT____________________ */
 
 .runfit-post{
-    background-image: url('../img/runfitfondo.jpg');
+    background-image: url('img/runfitfondo.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -560,7 +560,7 @@ footer{
     align-items: flex-end;
 }
 .entre-post{
-    background-image: url('../img/entrenamiento_fondo.jpg');
+    background-image: url('img/entrenamiento_fondo.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -569,7 +569,7 @@ footer{
 }
 
 .planes-post{
-    background-image: url('../img/planes_fondo.jpg');
+    background-image: url('img/planes_fondo.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -577,7 +577,7 @@ footer{
     align-items: flex-end;
 }
 .contacto-post{
-    background-image: url('../img/contacto_fondo.jpg');
+    background-image: url('img/contacto_fondo.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
