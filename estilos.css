@@ -579,7 +579,7 @@ footer {
 /* ________________FIN ENTRENAMIENTO____________________ */
 /* _____________________RUNFIT____________________ */
 .runfit-post {
-  background-image: url("../img/runfitfondo.jpg");
+  background-image: url("img/runfitfondo.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -590,7 +590,7 @@ footer {
 }
 
 .entre-post {
-  background-image: url("../img/entrenamiento_fondo.jpg");
+  background-image: url("img/entrenamiento_fondo.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -601,7 +601,7 @@ footer {
 }
 
 .planes-post {
-  background-image: url("../img/planes_fondo.jpg");
+  background-image: url("img/planes_fondo.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -612,7 +612,7 @@ footer {
 }
 
 .contacto-post {
-  background-image: url("../img/contacto_fondo.jpg");
+  background-image: url("img/contacto_fondo.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
